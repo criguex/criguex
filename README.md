@@ -15,13 +15,11 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <div id="header" align="center">
-  <img src="https://media.giphy.com/media/NTur7XlVDUdqM/giphy.gif?cid=790b76114nl8xgf4vtql1jw79oi6toz0smtdxy11igzhlvki&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="100"/>
+  <img src="https://media.giphy.com/media/HzPtbOKyBoBFsK4hyc/giphy.gif?cid=790b7611sjm5eud2j7yq4w224w8e3cwk2mfuio5rfjkhgtgf&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="200"/>
   <div id="badges">
     <a href="https://www.linkedin.com/in/criguex/">
       <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
     </a>
-  </div>
-  <img src="https://komarev.com/ghpvc/?username=criguex&color=blue" alt=""/>
   <h1>
   hey there
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
