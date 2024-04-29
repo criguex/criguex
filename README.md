@@ -31,12 +31,8 @@ Here are some ideas to get you started:
 
 ---
 ### :man_technologist: About Me :
-I am a Software Test Engineer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from New Zealand.
-- :telescope: I’m working as a Senior Test Engineer Contractor and contributing to projects both in Wellington and remotely around all New Zealand and Australia.
-
-- :seedling: Mentoring the new generations of Test Engineers in New Zealand through <a href="https://devacademy.co.nz/testing-automation-essentials/">DevAcademy Aotearoa</a>
-
-- :zap: In my free time, I create content for <a href="https://www.freerangetesters.com/">Free Range Testers</a> and make music on <a href="https://open.spotify.com/intl-es/artist/1n8lYlkH7XKivKBmh6oey1/">Modern Druids</a>.
+I am a QA Automation Engineer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from Colombia.
+- :telescope: I’m working as a QA Automation Engineer.
 
 ---
 
@@ -58,7 +54,6 @@ I am a Software Test Engineer <img src="https://media.giphy.com/media/WUlplcMpOC
 <div>
 <img src="https://github.com/devicons/devicon/blob/master/icons/cucumber/cucumber-plain.svg" title="Cucumber" **alt="Cucumber" width="40" height="40"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/selenium/selenium-original.svg" title="Selenium" **alt="Selenium" width="40" height="40"/>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/playwright/playwright-original.svg" title="Playwright" **alt="Selenium" width="40" height="40"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/cypressio/cypressio-original.svg" title="CypressIO" **alt="CypressIO" width="40" height="40"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/pytest/pytest-original.svg" title="Pytest" **alt="Pytest" width="40" height="40"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/postman/postman-original.svg" title="Postman" **alt="Postman" width="40" height="40"/>
@@ -69,8 +64,7 @@ I am a Software Test Engineer <img src="https://media.giphy.com/media/WUlplcMpOC
 ---
 
 ### :fire: My Stats :
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=thefreerangetester" alt="criguex" /></a> </p>
-<div align="center">  
+
   <img src="http://github-readme-streak-stats.herokuapp.com?user=thefreerangetester&theme=dark&background=000000" width="600"/>
 </div>
 <div align="center">
