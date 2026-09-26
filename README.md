@@ -18,6 +18,7 @@ Lately most of my work is **testing what AI builds**: making verdicts measurable
 
 | Project | What it shows | Stack |
 |---|---|---|
+| **[qa-eval-lab](https://github.com/criguex/qa-eval-lab)** | Playwright UI tests **and** LLM evaluation (DeepEval + Promptfoo) wired into one CI eval-gate — my AI-QA / AI-Evaluation differentiator | Playwright · TypeScript · DeepEval · Promptfoo · CI |
 | **[mutant-lab](https://github.com/criguex/mutant-lab)** | Runnable experiments behind my posts: mutant scenarios, scoring AI output against acceptance criteria, a second brain for AI-assisted QA | Playwright · TypeScript · CI |
 | **[civica-playwright-challenge](https://github.com/criguex/civica-playwright-challenge)** | Production-shaped framework: Page Object Model, semantic locators, deterministic mock layer, accessibility checks, self-learning mutant scenarios | Playwright · TypeScript · GitHub Actions |
 | **[playwright-saucedemo-e2e](https://github.com/criguex/playwright-saucedemo-e2e)** | Cross-browser E2E suite with POM and CI on every push | Playwright · TypeScript |
