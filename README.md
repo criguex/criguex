@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Cristian Guerra — Senior SDET · The Mutant Lab" width="100%"/>
+  <img src="assets/banner.svg" alt="Cristian Guerra — Senior SDET · WAR Paradigm" width="100%"/>
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@ Lately most of my work is **testing what AI builds**: making verdicts measurable
 | Project | What it shows | Stack |
 |---|---|---|
 | **[qa-eval-lab](https://github.com/criguex/qa-eval-lab)** | Playwright UI tests **and** LLM evaluation (DeepEval + Promptfoo) wired into one CI eval-gate — my AI-QA / AI-Evaluation differentiator | Playwright · TypeScript · DeepEval · Promptfoo · CI |
-| **[mutant-lab](https://github.com/criguex/mutant-lab)** | Runnable experiments behind my posts: mutant scenarios, scoring AI output against acceptance criteria, a second brain for AI-assisted QA | Playwright · TypeScript · CI |
+| **[war-paradigm](https://github.com/criguex/war-paradigm)** | WAR Paradigm: test the tester. Break reality on purpose (a physical law in a simulation, a step of a flow, an AI answer) and check whether the checks notice. Runnable experiments behind my posts | Playwright · TypeScript · CI |
 | **[civica-playwright-challenge](https://github.com/criguex/civica-playwright-challenge)** | Production-shaped framework: Page Object Model, semantic locators, deterministic mock layer, accessibility checks, self-learning mutant scenarios | Playwright · TypeScript · GitHub Actions |
 | **[playwright-saucedemo-e2e](https://github.com/criguex/playwright-saucedemo-e2e)** | Cross-browser E2E suite with POM and CI on every push | Playwright · TypeScript |
 | **[karate-api-testing](https://github.com/criguex/karate-api-testing)** | Data-driven REST API testing with happy and failure paths | Karate DSL · Java · Maven |
