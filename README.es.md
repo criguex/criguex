@@ -14,6 +14,28 @@
 
 Me aseguro de que el software haga lo que promete. Construyo revisiones automáticas que usan una aplicación como lo haría una persona y levantan la mano apenas algo se rompe, y las conecto al pipeline para que corran con cada cambio. Últimamente también reviso la IA: pruebo lo que construye y cómo se califica, y rompo cosas a propósito para demostrar que las revisiones de verdad lo notan.
 
+## Tres casos
+
+Tres proyectos, uno por tipo de trabajo. Cada uno dice el problema, qué construí, cómo comprobarlo tú mismo y qué se midió. Las cifras salen de corridas de laboratorio, no de sistemas en producción.
+
+**1 · Automatización para un release: [restful-booker-quality-suite](https://github.com/criguex/restful-booker-quality-suite)**
+- **Problema:** decidir si una API puede salir, y mantener visibles los bugs conocidos en vez de esconderlos.
+- **Qué construí:** suite de API con Playwright basada en riesgo, contratos con Zod y presupuestos de latencia, en cuatro gates de CI contra una copia fija de la app en Docker.
+- **Compruébalo:** `docker compose up --build -d && npm ci && npm run quality`
+- **Medido (laboratorio):** 43 chequeos pasan en 2,0 s; 8 defectos confirmados quedan como fallos esperados, así que un arreglo pone la suite en rojo hasta que alguien lo reconoce.
+
+**2 · Evaluar un agente de IA: [agent-eval-jev](https://github.com/criguex/agent-eval-jev)**
+- **Problema:** saber cuándo un agente que usa herramientas inventa cifras o se salta un paso, sin confiar en un solo juez LLM.
+- **Qué construí:** primero chequeos en código, después un juez Jev calibrado, un juez LLM solo para comparar, y un gate de CI con una franja de revisión humana.
+- **Compruébalo:** `python -m agenteval evaluate && python -m agenteval gate`
+- **Medido (laboratorio):** el evaluador coincide con las etiquetas humanas en el 93,1% de 29 casos de prueba (kappa 0,86); el mismo gate deja pasar al agente v2 y frena al v1.
+
+**3 · QA científico: [predictor-debugger](https://github.com/criguex/predictor-debugger)**
+- **Problema:** comprobar si una red neuronal que predice un fluido 3D respeta la física, sin mover el arco después de ver los datos.
+- **Qué construí:** un depurador físico con hipótesis y umbrales en un commit antes de cada ronda, corrido en varias máquinas.
+- **Compruébalo:** `uv run --locked verify.py --saved mac` (minutos, sin descargar datos)
+- **Medido:** 49 hipótesis prerregistradas en cuatro rondas: 48 pasan y una (H14) falló y está publicada así; las mismas huellas en seis entornos.
+
 ## Sobre mí
 
 Soy SDET senior con más de 7 años en automatización de pruebas, sobre todo en fintech y banca. Diseño frameworks de automatización desde cero, pruebo APIs y aplicaciones web de punta a punta y meto gates de calidad en el CI.

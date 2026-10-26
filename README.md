@@ -14,6 +14,28 @@
 
 I make sure software does what it promises. I build automated checks that use an app the way a person would and raise a flag the moment something breaks, and I wire them into the pipeline so they run on every change. Lately I also check AI: I test what it builds and how it is graded, and I break things on purpose to prove the checks really notice.
 
+## Three cases
+
+Three projects, one per kind of work. Each one says the problem, what I built, how to check it yourself and what was measured. The numbers come from lab runs, not from production systems.
+
+**1 · Test automation for a release: [restful-booker-quality-suite](https://github.com/criguex/restful-booker-quality-suite)**
+- **Problem:** decide whether an API can ship, and keep known bugs visible instead of hiding them.
+- **What I built:** risk-based Playwright API suite with Zod contracts and latency budgets, run in four CI gates against a pinned Docker copy of the app.
+- **Check it:** `docker compose up --build -d && npm ci && npm run quality`
+- **Measured (lab):** 43 checks pass in 2.0 s; 8 confirmed defects kept as expected failures, so a fix turns the suite red until it is acknowledged.
+
+**2 · Evaluating an AI agent: [agent-eval-jev](https://github.com/criguex/agent-eval-jev)**
+- **Problem:** know when a tool-using agent invents numbers or skips a step, without trusting one LLM judge.
+- **What I built:** code checks first, a calibrated Jev judge second, an LLM judge only for comparison, and a CI gate with a human-review band.
+- **Check it:** `python -m agenteval evaluate && python -m agenteval gate`
+- **Measured (lab):** the evaluator agrees with human labels on 93.1% of 29 held-out cases (kappa 0.86); the same gate passes agent v2 and blocks v1.
+
+**3 · Scientific QA: [predictor-debugger](https://github.com/criguex/predictor-debugger)**
+- **Problem:** check whether a neural network that predicts a 3D fluid respects physics, without moving the goalposts after seeing the data.
+- **What I built:** a physics debugger with hypotheses and thresholds committed before each round, run on several machines.
+- **Check it:** `uv run --locked verify.py --saved mac` (minutes, no data download)
+- **Measured:** 49 pre-registered hypotheses over four rounds, 48 pass and one (H14) failed and is published as such; the same fingerprints in six environments.
+
 ## About
 
 Senior SDET with 7+ years in test automation, mostly in fintech and banking. I design automation frameworks from zero, test APIs and web apps end to end, and put quality gates into CI.
