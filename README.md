@@ -31,6 +31,12 @@ Ordered from most to least important.
 | **[scientific-qa-evidence](https://github.com/criguex/scientific-qa-evidence)** | Independent, reproducible QA audit of OpenAI's Lean 4 proofs for Navier–Stokes and Euler: rebuilt from source, rechecked with two independent proof checkers, and mutation-tested on purpose. [Read the site](https://criguex.github.io/scientific-qa-evidence/) | Lean 4 · Python · CI |
 | **[predictor-debugger](https://github.com/criguex/predictor-debugger)** | A pre-registered physics debugger for a neural network that predicts a 3D fluid: thresholds committed before the data, verdicts reproduced on three machines, and failed hypotheses published too | Python · numpy · uv · CI |
 
+### Teaching
+
+| Project | What it shows | Stack |
+|---|---|---|
+| **[qa-automation-course](https://github.com/criguex/qa-automation-course)** | Free interactive QA Automation course (content in Spanish): 35 modules in 4 levels, from test oracles and Playwright to AI evaluation, mutation testing and scientific QA, each with a self-graded quiz, a verifiable challenge and a rubric. [Take the course](https://criguex.github.io/qa-automation-course/) | HTML · JavaScript · GitHub Pages |
+
 ### Evaluating AI
 
 | Project | What it shows | Stack |

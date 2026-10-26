@@ -31,6 +31,12 @@ Ordenados del más importante al menos importante.
 | **[scientific-qa-evidence](https://github.com/criguex/scientific-qa-evidence)** | Auditoría de QA independiente y reproducible de las pruebas en Lean 4 que publicó OpenAI para Navier–Stokes y Euler: reconstruidas desde el código fuente, verificadas de nuevo con dos verificadores independientes y sometidas a mutaciones a propósito. [Ver el sitio](https://criguex.github.io/scientific-qa-evidence/) | Lean 4 · Python · CI |
 | **[predictor-debugger](https://github.com/criguex/predictor-debugger)** | Un depurador físico prerregistrado para una red neuronal que predice un fluido 3D: umbrales comprometidos antes de los datos, veredictos reproducidos en tres máquinas y las hipótesis que fallan también publicadas | Python · numpy · uv · CI |
 
+### Enseñar
+
+| Proyecto | Qué muestra | Stack |
+|---|---|---|
+| **[qa-automation-course](https://github.com/criguex/qa-automation-course)** | Curso interactivo y gratis de QA Automation: 35 módulos en 4 niveles, desde oráculos y Playwright hasta evaluar IA, mutation testing y QA científico, cada uno con quiz autocorregible, reto verificable y rúbrica. [Haz el curso](https://criguex.github.io/qa-automation-course/) | HTML · JavaScript · GitHub Pages |
+
 ### Evaluar IA
 
 | Proyecto | Qué muestra | Stack |
