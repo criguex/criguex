@@ -49,6 +49,12 @@ Ordenados del más importante al menos importante.
 | **[war-paradigm](https://github.com/criguex/war-paradigm)** | WAR Paradigm: probar al que prueba. Romper la realidad a propósito (una ley física en una simulación, un paso de un flujo, una respuesta de IA) y ver si las pruebas lo notan. Experimentos ejecutables detrás de mis publicaciones | Playwright · TypeScript · CI |
 | **[civica-playwright-challenge](https://github.com/criguex/civica-playwright-challenge)** | Framework con forma de producción: Page Object Model, localizadores semánticos, capa de mocks determinista, chequeos de accesibilidad, escenarios mutantes que aprenden solos | Playwright · TypeScript · GitHub Actions |
 
+### QA de requisitos
+
+| Proyecto | Qué muestra | Stack |
+|---|---|---|
+| **[spec-review-case-study](https://github.com/criguex/spec-review-case-study)** | Cómo reviso una especificación antes de que alguien construya: 19 hallazgos (números que no cuadran, costos dados como hechos, reglas que nadie podría probar), una checklist reutilizable y un script que recalcula las cifras | Markdown · Python |
+
 ### Frameworks de automatización
 
 | Proyecto | Qué muestra | Stack |

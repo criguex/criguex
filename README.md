@@ -49,6 +49,12 @@ Ordered from most to least important.
 | **[war-paradigm](https://github.com/criguex/war-paradigm)** | WAR Paradigm: test the tester. Break reality on purpose (a physical law in a simulation, a step of a flow, an AI answer) and check whether the checks notice. Runnable experiments behind my posts | Playwright · TypeScript · CI |
 | **[civica-playwright-challenge](https://github.com/criguex/civica-playwright-challenge)** | Production-shaped framework: Page Object Model, semantic locators, deterministic mock layer, accessibility checks, self-learning mutant scenarios | Playwright · TypeScript · GitHub Actions |
 
+### Requirements QA
+
+| Project | What it shows | Stack |
+|---|---|---|
+| **[spec-review-case-study](https://github.com/criguex/spec-review-case-study)** | How I review a spec before anyone builds: 19 findings (numbers that do not add up, costs stated as facts, rules nobody could test), a reusable checklist and a script that recomputes the numbers | Markdown · Python |
+
 ### Test automation frameworks
 
 | Project | What it shows | Stack |
