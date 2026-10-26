@@ -1,3 +1,5 @@
+<p align="right"><sub><a href="https://github.com/criguex/criguex/blob/main/README.es.md">Leer en español</a></sub></p>
+
 <p align="center">
   <img src="assets/banner-navy.svg" alt="Cristian Guerra — Senior SDET · WAR Paradigm" width="100%"/>
 </p>
