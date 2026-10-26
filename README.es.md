@@ -29,8 +29,8 @@ Tres proyectos, uno por tipo de trabajo. Cada uno dice el problema, qué constru
 - **Problema:** saber cuándo un agente que usa herramientas inventa cifras o se salta un paso, sin confiar en un solo juez LLM.
 - **Qué construí:** primero chequeos en código, después un juez Jev calibrado, un juez LLM solo para comparar, y un gate de CI con una franja de revisión humana.
 - **Compruébalo:** `python -m agenteval evaluate && python -m agenteval gate`
-- **Mi parte:** decidí qué probar, los pesos de los criterios y las reglas del umbral; asistentes de IA lo construyeron y lo corrieron bajo mi dirección.
-- **Medido (laboratorio):** el evaluador coincide con las etiquetas humanas en el 93,1% de 29 casos de prueba (kappa 0,86); el mismo gate deja pasar al agente v2 y frena al v1.
+- **Mi parte:** decidí qué probar, los pesos de los criterios y las reglas del umbral; un asistente de IA redactó las 60 etiquetas de referencia siguiendo mi rúbrica y yo las revisé y aprobé; asistentes de IA lo construyeron y lo corrieron bajo mi dirección.
+- **Medido (laboratorio):** el evaluador coincide con las etiquetas de referencia (redactadas por IA, revisadas por mí, sin anotador independiente) en el 93,1% de 29 casos de prueba (kappa 0,86); el mismo gate deja pasar al agente v2 y frena al v1.
 
 **3 · QA científico: [predictor-debugger](https://github.com/criguex/predictor-debugger)**
 - **Problema:** comprobar si una red neuronal que predice un fluido 3D respeta la física, sin mover el arco después de ver los datos.
