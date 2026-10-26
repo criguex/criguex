@@ -22,19 +22,30 @@ Tres proyectos, uno por tipo de trabajo. Cada uno dice el problema, qué constru
 - **Problema:** decidir si una API puede salir, y mantener visibles los bugs conocidos en vez de esconderlos.
 - **Qué construí:** suite de API con Playwright basada en riesgo, contratos con Zod y presupuestos de latencia, en cuatro gates de CI contra una copia fija de la app en Docker.
 - **Compruébalo:** `docker compose up --build -d && npm ci && npm run quality`
+- **Mi parte:** una demo tratada como un release. Definí el modelo de riesgo (P0: cambios sin autorización, integridad del ciclo de la reserva, autenticación) y qué bloquea un release; dejé visibles los 8 defectos y escribí cada exclusión. Asistentes de IA escribieron el código Playwright/Zod y el reporte bajo mi dirección.
 - **Medido (laboratorio):** 43 chequeos pasan en 2,0 s; 8 defectos confirmados quedan como fallos esperados, así que un arreglo pone la suite en rojo hasta que alguien lo reconoce.
 
 **2 · Evaluar un agente de IA: [agent-eval-jev](https://github.com/criguex/agent-eval-jev)**
 - **Problema:** saber cuándo un agente que usa herramientas inventa cifras o se salta un paso, sin confiar en un solo juez LLM.
 - **Qué construí:** primero chequeos en código, después un juez Jev calibrado, un juez LLM solo para comparar, y un gate de CI con una franja de revisión humana.
 - **Compruébalo:** `python -m agenteval evaluate && python -m agenteval gate`
+- **Mi parte:** decidí qué probar, los pesos de los criterios y las reglas del umbral; asistentes de IA lo construyeron y lo corrieron bajo mi dirección.
 - **Medido (laboratorio):** el evaluador coincide con las etiquetas humanas en el 93,1% de 29 casos de prueba (kappa 0,86); el mismo gate deja pasar al agente v2 y frena al v1.
 
 **3 · QA científico: [predictor-debugger](https://github.com/criguex/predictor-debugger)**
 - **Problema:** comprobar si una red neuronal que predice un fluido 3D respeta la física, sin mover el arco después de ver los datos.
 - **Qué construí:** un depurador físico con hipótesis y umbrales en un commit antes de cada ronda, corrido en varias máquinas.
 - **Compruébalo:** `uv run --locked verify.py --saved mac` (minutos, sin descargar datos)
+- **Mi parte:** orquesté las rondas: tres máquinas y sistemas operativos, versiones fijadas, publicar los fallos como fallos, una v1.0 reproducible. La IA propuso hipótesis y umbrales, que aprobé antes de cada ronda, y escribió y corrió el código.
 - **Medido:** 49 hipótesis prerregistradas en cuatro rondas: 48 pasan y una (H14) falló y está publicada así; las mismas huellas en seis entornos.
+
+## Liderazgo técnico
+
+Lidero como contribuidor individual: defino los riesgos, los gates y las reglas, y agentes de IA hacen buena parte de la ejecución dentro de ellas. Tres casos, anonimizados:
+
+- **Parar la producción por un falso verde.** En una línea de contenido automatizada que es mía, una auditoría mostró que la puerta de calidad de imágenes daba 90 y «aprobado» mientras rechazaba 10 de 10 planos. Paré la generación, decidí los 12 gates abiertos del plan de corrección y solo reanudé cuando la puerta volvió a medir; el arreglo y el despliegue tomaron unas 5 horas. Regla: un gate que dice OK sin evidencia es peor que no tener gate.
+- **Criterios de release para 10 apps pequeñas de clientes.** Definí qué es P0 (lo que bloquea hoy o crea riesgo legal o de dinero real ahora; una función que nadie pidió nunca es P0; una afirmación falsa en la documentación es P0) y la regla de que nada sale sin smoke y E2E en verde y sin un revisor que no sea quien arregla. Una ronda de revisión, hecha por agentes de IA con ese protocolo, encontró 17 P0 y cerró 16, con unas 125 pruebas nuevas.
+- **Corregir a la IA con evidencia.** Cuando un asistente de IA recalculó mi experimento público y lo llamó revisión independiente, le hice etiquetarlo como operado por IA bajo mi dirección y lo publiqué como release aparte ([repro-ia-20261026](https://github.com/criguex/predictor-debugger/releases/tag/repro-ia-20261026)). Quién ejecutó algo cambia lo que se puede afirmar.
 
 ## Sobre mí
 

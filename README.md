@@ -22,19 +22,30 @@ Three projects, one per kind of work. Each one says the problem, what I built, h
 - **Problem:** decide whether an API can ship, and keep known bugs visible instead of hiding them.
 - **What I built:** risk-based Playwright API suite with Zod contracts and latency budgets, run in four CI gates against a pinned Docker copy of the app.
 - **Check it:** `docker compose up --build -d && npm ci && npm run quality`
+- **My part:** a demo run as a release. I set the risk model (P0: unauthorized changes, booking-lifecycle integrity, authentication) and what blocks a release; I kept the 8 defects visible and wrote down every exclusion. AI assistants wrote the Playwright/Zod code and the report under my direction.
 - **Measured (lab):** 43 checks pass in 2.0 s; 8 confirmed defects kept as expected failures, so a fix turns the suite red until it is acknowledged.
 
 **2 · Evaluating an AI agent: [agent-eval-jev](https://github.com/criguex/agent-eval-jev)**
 - **Problem:** know when a tool-using agent invents numbers or skips a step, without trusting one LLM judge.
 - **What I built:** code checks first, a calibrated Jev judge second, an LLM judge only for comparison, and a CI gate with a human-review band.
 - **Check it:** `python -m agenteval evaluate && python -m agenteval gate`
+- **My part:** I decided what to test, the criteria weights and the threshold rules; AI assistants built and ran it under my direction.
 - **Measured (lab):** the evaluator agrees with human labels on 93.1% of 29 held-out cases (kappa 0.86); the same gate passes agent v2 and blocks v1.
 
 **3 · Scientific QA: [predictor-debugger](https://github.com/criguex/predictor-debugger)**
 - **Problem:** check whether a neural network that predicts a 3D fluid respects physics, without moving the goalposts after seeing the data.
 - **What I built:** a physics debugger with hypotheses and thresholds committed before each round, run on several machines.
 - **Check it:** `uv run --locked verify.py --saved mac` (minutes, no data download)
+- **My part:** I orchestrated the rounds: three machines and operating systems, pinned versions, publish failures as failures, a reproducible v1.0. The AI proposed hypotheses and thresholds, which I approved before each round, and wrote and ran the code.
 - **Measured:** 49 pre-registered hypotheses over four rounds, 48 pass and one (H14) failed and is published as such; the same fingerprints in six environments.
+
+## Technical leadership
+
+I lead as an individual contributor: I set the risks, the gates and the rules, and AI agents do much of the execution under them. Three cases, anonymized:
+
+- **Stopping production for a false green.** In an automated content pipeline I own, an audit showed the image quality gate scored 90 and "passed" while rejecting 10 of 10 shots. I stopped generation, decided the 12 open gates of the fix plan and only resumed when the gate measured again; fix and deploy took about 5 hours. Rule: a gate that says OK without evidence is worse than no gate.
+- **Release criteria for 10 small client apps.** I set the definition (P0 is whatever blocks today or creates legal or real-money risk now; an unrequested feature is never P0; a false claim in the docs is P0) and the rule that nothing ships without smoke and E2E green and a reviewer who is not the fixer. One review round, run by AI agents under that protocol, found 17 P0s and closed 16, with about 125 new tests.
+- **Correcting AI with evidence.** When an AI assistant recomputed my public experiment and called it an independent review, I made it relabel the run as AI-operated under my direction, and published it as a separate release ([repro-ia-20261026](https://github.com/criguex/predictor-debugger/releases/tag/repro-ia-20261026)). Who ran something changes what you can claim.
 
 ## About
 
