@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Cristian Guerra — Senior SDET · WAR Paradigm" width="100%"/>
+  <img src="assets/banner-navy.svg" alt="Cristian Guerra — Senior SDET · WAR Paradigm" width="100%"/>
 </p>
 
 <p align="center">
