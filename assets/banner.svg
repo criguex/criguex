@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
   <defs>
     <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#C6FF3D" stroke-opacity=".07" stroke-width="1"/>
+      <path d="M40 0H0V40" fill="none" stroke="#55DFBD" stroke-opacity=".07" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="1280" height="320" rx="20" fill="#0E1116"/>
+  <rect width="1280" height="320" rx="20" fill="#071B2B"/>
   <rect width="1280" height="320" rx="20" fill="url(#g)"/>
-  <rect x="64" y="64" width="72" height="72" rx="18" fill="#C6FF3D"/>
-  <text x="100" y="112" text-anchor="middle" font-family="Arial Black, Helvetica, Arial, sans-serif" font-weight="900" font-size="30" fill="#0E1116">ML</text>
-  <text x="160" y="96" font-family="Menlo, Consolas, monospace" font-size="18" letter-spacing="3" fill="#8B95A7">WAR PARADIGM</text>
-  <text x="160" y="126" font-family="Menlo, Consolas, monospace" font-size="18" fill="#C6FF3D">I test what AI builds</text>
-  <text x="64" y="212" font-family="Arial Black, Helvetica, Arial, sans-serif" font-weight="900" font-size="56" fill="#EDEFF3">Cristian Guerra</text>
-  <text x="64" y="258" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#B8C0CF">Senior SDET · QA Automation · AI-augmented testing</text>
+  <rect x="64" y="64" width="72" height="72" rx="18" fill="#55DFBD"/>
+  <text x="100" y="112" text-anchor="middle" font-family="Arial Black, Helvetica, Arial, sans-serif" font-weight="900" font-size="30" fill="#071B2B">ML</text>
+  <text x="160" y="96" font-family="Menlo, Consolas, monospace" font-size="18" letter-spacing="3" fill="#8FA6B0">WAR PARADIGM</text>
+  <text x="160" y="126" font-family="Menlo, Consolas, monospace" font-size="18" fill="#55DFBD">I test what AI builds</text>
+  <text x="64" y="212" font-family="Arial Black, Helvetica, Arial, sans-serif" font-weight="900" font-size="56" fill="#F4F7F5">Cristian Guerra</text>
+  <text x="64" y="258" font-family="Helvetica, Arial, sans-serif" font-size="24" fill="#ABC0C8">Senior SDET · QA Automation · AI-augmented testing</text>
   <g font-family="Menlo, Consolas, monospace" font-size="17" xml:space="preserve">
-    <rect x="884" y="84" width="332" height="152" rx="14" fill="#07090D" stroke="#2E3543"/>
-    <text x="906" y="120" fill="#6B7486">$ npx playwright test</text>
-    <text x="906" y="152" fill="#C6FF3D">✓ golden flow   passed</text>
-    <text x="906" y="180" fill="#C6FF3D">✓ 5 mutants    killed</text>
-    <text x="906" y="208" fill="#FF5C7A">✗ 1 mutant     SURVIVED</text>
+    <rect x="884" y="84" width="332" height="152" rx="14" fill="#0D2638" stroke="#214456"/>
+    <text x="906" y="120" fill="#8FA6B0">$ npx playwright test</text>
+    <text x="906" y="152" fill="#55DFBD">✓ golden flow   passed</text>
+    <text x="906" y="180" fill="#55DFBD">✓ 5 mutants    killed</text>
+    <text x="906" y="208" fill="#FB8176">✗ 1 mutant     SURVIVED</text>
   </g>
 </svg>

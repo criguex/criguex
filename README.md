@@ -4,8 +4,8 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/criguex"><img src="https://img.shields.io/badge/LinkedIn-criguex-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <img src="https://img.shields.io/badge/Based_in-Medellín,_Colombia_(GMT--5)-0E1116?style=flat-square" alt="Location"/>
-  <a href="https://wa.me/573106344106?text=Hi%20Cristian%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20talk%20about%20a%20remote%20contract%20role"><img src="https://img.shields.io/badge/Open_to-remote_contract_roles-C6FF3D?style=flat-square&labelColor=0E1116&logo=whatsapp&logoColor=0E1116" alt="Open to remote contract roles — message me on WhatsApp"/></a>
+  <img src="https://img.shields.io/badge/Based_in-Medellín,_Colombia_(GMT--5)-071B2B?style=flat-square" alt="Location"/>
+  <a href="https://wa.me/573106344106?text=Hi%20Cristian%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20talk%20about%20a%20remote%20contract%20role"><img src="https://img.shields.io/badge/Open_to-remote_contract_roles-55DFBD?style=flat-square&labelColor=071B2B&logo=whatsapp&logoColor=071B2B" alt="Open to remote contract roles — message me on WhatsApp"/></a>
 </p>
 
 ## About
