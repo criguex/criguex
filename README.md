@@ -7,12 +7,23 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/criguex"><img src="https://img.shields.io/badge/LinkedIn-criguex-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <img src="https://img.shields.io/badge/Based_in-Medellín,_Colombia_(GMT--5)-071B2B?style=flat-square" alt="Location"/>
-  <a href="https://wa.me/573106344106?text=Hi%20Cristian%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20talk%20about%20a%20remote%20contract%20role"><img src="https://img.shields.io/badge/Open_to-remote_contract_roles-55DFBD?style=flat-square&labelColor=071B2B&logo=whatsapp&logoColor=071B2B" alt="Open to remote contract roles — message me on WhatsApp"/></a>
+  <a href="https://www.linkedin.com/in/criguex"><img src="https://img.shields.io/badge/Open_to-remote_contract_roles-55DFBD?style=flat-square&labelColor=071B2B&logo=linkedin&logoColor=071B2B" alt="Open to remote contract roles — message me on LinkedIn"/></a>
 </p>
 
 ## In simple words
 
 I make sure software does what it promises. I build automated checks that use an app the way a person would and raise a flag the moment something breaks, and I wire them into the pipeline so they run on every change. Lately I also check AI: I test what it builds and how it is graded, and I break things on purpose to prove the checks really notice.
+
+## Start here
+
+| Project | Focus |
+|---|---|
+| [scientific-qa-evidence](https://github.com/criguex/scientific-qa-evidence) | Formal-proof reproduction and scientific mutation testing |
+| [predictor-debugger](https://github.com/criguex/predictor-debugger) | Physics checks for neural fluid predictions |
+| [civica-playwright-challenge](https://github.com/criguex/civica-playwright-challenge) | UI automation, accessibility and mutation testing |
+| [restful-booker-quality-suite](https://github.com/criguex/restful-booker-quality-suite) | API testing and release quality gates |
+| [agent-eval-jev](https://github.com/criguex/agent-eval-jev) | Evaluation of AI agents that use tools |
+| [qa-automation-course](https://github.com/criguex/qa-automation-course) | Interactive QA course in Spanish |
 
 ## Three cases
 
@@ -121,4 +132,4 @@ Ordered from most to least important.
 
 ## Contact
 
-Reach me on [WhatsApp](https://wa.me/573106344106?text=Hi%20Cristian%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20talk%20about%20a%20remote%20contract%20role) or [LinkedIn](https://www.linkedin.com/in/criguex). Open to [remote contract roles](https://wa.me/573106344106?text=Hi%20Cristian%2C%20I%20saw%20your%20GitHub%20profile%20and%20would%20like%20to%20talk%20about%20a%20remote%20contract%20role) in QA automation and SDET.
+Reach me on [LinkedIn](https://www.linkedin.com/in/criguex). Open to remote contract roles in QA automation and SDET.
