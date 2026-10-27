@@ -7,12 +7,23 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/criguex"><img src="https://img.shields.io/badge/LinkedIn-criguex-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <img src="https://img.shields.io/badge/Vivo_en-Medellín,_Colombia_(GMT--5)-071B2B?style=flat-square" alt="Ubicación"/>
-  <a href="https://wa.me/573106344106?text=Hola%20Cristian%2C%20vi%20tu%20perfil%20de%20GitHub%20y%20me%20gustar%C3%ADa%20hablar%20de%20un%20contrato%20remoto"><img src="https://img.shields.io/badge/Disponible_para-contratos_remotos-55DFBD?style=flat-square&labelColor=071B2B&logo=whatsapp&logoColor=071B2B" alt="Disponible para contratos remotos — escríbeme por WhatsApp"/></a>
+  <a href="https://www.linkedin.com/in/criguex"><img src="https://img.shields.io/badge/Disponible_para-contratos_remotos-55DFBD?style=flat-square&labelColor=071B2B&logo=linkedin&logoColor=071B2B" alt="Disponible para contratos remotos — escríbeme por LinkedIn"/></a>
 </p>
 
 ## En palabras simples
 
 Me aseguro de que el software haga lo que promete. Construyo revisiones automáticas que usan una aplicación como lo haría una persona y levantan la mano apenas algo se rompe, y las conecto al pipeline para que corran con cada cambio. Últimamente también reviso la IA: pruebo lo que construye y cómo se califica, y rompo cosas a propósito para demostrar que las revisiones de verdad lo notan.
+
+## Empieza aquí
+
+| Proyecto | Enfoque |
+|---|---|
+| [scientific-qa-evidence](https://github.com/criguex/scientific-qa-evidence) | Reproducción de pruebas formales y mutación científica |
+| [predictor-debugger](https://github.com/criguex/predictor-debugger) | Verificación física de predicciones neuronales de fluidos |
+| [civica-playwright-challenge](https://github.com/criguex/civica-playwright-challenge) | Automatización de UI, accesibilidad y pruebas de mutación |
+| [restful-booker-quality-suite](https://github.com/criguex/restful-booker-quality-suite) | Pruebas de API y criterios de calidad para releases |
+| [agent-eval-jev](https://github.com/criguex/agent-eval-jev) | Evaluación de agentes de IA que usan herramientas |
+| [qa-automation-course](https://github.com/criguex/qa-automation-course) | Curso interactivo de QA en español |
 
 ## Tres casos
 
@@ -121,4 +132,4 @@ Ordenados del más importante al menos importante.
 
 ## Contacto
 
-Escríbeme por [WhatsApp](https://wa.me/573106344106?text=Hola%20Cristian%2C%20vi%20tu%20perfil%20de%20GitHub%20y%20me%20gustar%C3%ADa%20hablar%20de%20un%20contrato%20remoto) o [LinkedIn](https://www.linkedin.com/in/criguex). Estoy disponible para [contratos remotos](https://wa.me/573106344106?text=Hola%20Cristian%2C%20vi%20tu%20perfil%20de%20GitHub%20y%20me%20gustar%C3%ADa%20hablar%20de%20un%20contrato%20remoto) en automatización de QA y SDET.
+Escríbeme por [LinkedIn](https://www.linkedin.com/in/criguex). Estoy disponible para contratos remotos en automatización de QA y SDET.
